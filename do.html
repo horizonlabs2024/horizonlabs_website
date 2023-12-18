@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
     /* Style the dropdown button and container */
@@ -47,15 +48,172 @@
     display: block;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    margin-top: 10px;
+    /* margin: auto; */
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+.container button{
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    
+}
+.container button i{
+    font-size: 35px;
+}
+.container button i:hover{
+    cursor: pointer;
+}
+.container .slider{
+    height: 85%;
+    width: 100%;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.container .slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   
+}
+.slide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+}
+.heading_container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.heading_container h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+}
+/* .heading_container h2::before, .heading_container h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #fec016;
+}
+.heading_container h2::before {
+  left: -5px;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+}
+.heading_container h2::after {
+  right: -5px;
+  -webkit-transform: translate(100%, -50%);
+          transform: translate(100%, -50%);
+} */
 </style>
 <body>
-    <div class="dropdown">
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+              <a class="navbar-brand" href="index.html">
+                <span>
+                  Dixit Ventures
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav  ">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html"> About </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="do.html"> Services </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="portfolio.html"> Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                  </ul>
+                  <div class="user_option">
+                    <a href="">
+                      <img src="images/user.png" alt="">
+                    </a>
+                    <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                      <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <!-- end header section -->
+      </div>
+    <!-- slider section -->
+    <div class="heading_container">
+        <h2>
+          Project Highlights
+        </h2>
+    </div>
+    <div class="container">
+        <button onclick="goprev()"><i class="fa-solid fa-circle-chevron-left"></i></button>
+        <div class="slider">
+            <img src="https://plus.unsplash.com/premium_photo-1663838843630-dd4a44710a8e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide">
+            <img src="https://images.unsplash.com/photo-1541774995-47504d7c9f78?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide">
+            <img src="https://images.unsplash.com/photo-1621818664299-165c424b9ca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8NGt8ZW58MHx8MHx8fDA%3D" class="slide">
+            <img src="https://images.unsplash.com/photo-1649938072005-2063a670e6ac?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide">
+            <img src="https://images.unsplash.com/photo-1673963802605-ec8ab2139a82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="slide">
+        </div>
+        <button onclick="gonext()"> <i class="fa-solid fa-circle-chevron-right"></i></button>
+        
+    </div>
+    <!-- <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
             <a href="#">Item 1</a>
             <a href="#">Item 2</a>
             <a href="#">Item 3</a>
         </div>
-    </div>
+    </div> -->
+    <script src="js/sliderscript.js"></script>
 </body>
 </html>

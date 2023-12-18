@@ -29,6 +29,7 @@ body {
 }
 
 .heading_container {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,6 +46,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   position: relative;
+  font-size: 5vh;
 }
 
 .heading_container h2::before, .heading_container h2::after {
@@ -323,18 +325,22 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 80vh;
 }
 
 .who_section .img-box img {
-  width: 100%;
+  width: 90%;
 }
 
 .who_section .detail-box {
-  margin-left: 65px;
+  /* margin-left: 65px; */
 }
 
 .who_section .detail-box p {
   margin-top: 35px;
+  font-size: 3vh;
+  line-height: 6vh;
+  margin-right: 4vh;
 }
 
 .who_section .detail-box a {
@@ -710,5 +716,129 @@ a:focus {
   color: #fbfcfd;
 }
 
+/* usp */
+.usp{
+  height: 120vh;
+  width: 100%;
+  /* background-color:green; */
+  margin-bottom: 5vw;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  margin-top: -4vh;
+}
+.usp-header h1{
+  font-size: 7vh;
+  font-weight: 550;
+  /* text-decoration: underline; */
+  margin-bottom: 1vh;
+}
+.usp-hero{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: yellow; */
+  flex-wrap: wrap;
+}
+.usp-box{
+  height: 40vh;
+  width: 80vh;
+  background-color:#FEC016;
+  /* border: 2px solid black; */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+}
+.usp-img{
+  font-size: 20vh;
+  margin: 0 3vh;
+}
+.usp-info{
+  margin: 5vh 3vh;
+}
+.usp-heading{
+  font-size: 4vh;
+  font-weight: 550;
+  margin-bottom: 2vh;
+}
+.usp-text{
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+
+
+/* portfolio page */
+.portfolio_container{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: yellow; */
+}
+.img_container{
+  height: 45vh;
+  width: 150vh;
+  /* background-color: red; */
+  margin: 7vh 5vh;
+  border-radius: 5vh;
+  margin: 5vh 15vh 0 5vh;
+}
+.img_container img{
+  height: 100%;
+  width: 100%;
+  border-radius: .5vh;
+  object-fit: cover;
+
+}
+.heading_container{
+  margin: 0 5vh;
+}
+.heading_container h2{
+  margin-bottom: 1vh;
+}
+.heading_container p{
+  font-size: 2.5vh;
+  line-height: 4vh;
+}
+
+.projectbox{
+  height: 40vh;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  margin: 15vh 0;
+}
+.project_text{
+  margin: 0 5vh;
+  width: 100%;
+}
+.project_text h2{
+  margin-bottom: 2vh;
+  font-size: 4vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.project_text p{
+  font-size: 2.7vh;
+  line-height: 5vh;
+}
+.project_img{
+  margin: 5vh 10vh;
+  height: 80%;
+  width: 95vh;
+  background-color: yellow;
+}
+.project_img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* end portfolio page */
+.who_section{
+  margin-bottom: 30vh;
+}
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
